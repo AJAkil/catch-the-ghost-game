@@ -1,0 +1,40 @@
+<!doctype html>
+<title>Simple tables</title>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+<div class=page>
+    <h1 class="header">Find The Ghost</h1>
+    <br>
+    <div class="game-board">
+        {% for data in board %}
+            {% for value in data %}
+                {% set outer_loop = loop %}
+                <form action="sex" method="post">
+                    {% if  outer_loop.index == position and loop.index == position2 %}
+                        <button type="submit" action="sex" class="probabilities-2">{{ value|safe }}</button>
+                    {% else %}
+                        <button type="submit" action="sex" class="probabilities">{{ value|safe }}</button>
+                    {% endif %}
+
+                </form>
+            {% endfor %}
+        {% endfor %}
+
+    </div>
+
+    <div class="ghost-position">
+        <p>The ghost moved to {{ position, position2 }}</p>
+    </div>
+
+    <br>
+    <div class="buttons">
+        <form action="button">
+            <button type="submit" class="button time">Advance Time!</button>
+            <form>
+
+                <form action="button">
+                    <button type="submit" class="button scan">Scan For Ghost</button>
+                    <form>
+
+    </div>
+
+</div>

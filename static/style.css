@@ -1,0 +1,97 @@
+body            { font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;}
+a, h1, h2       { color: #3797a8; }
+h1, h2          { margin: 0; }
+h1              { border-bottom: 2px solid #eee; }
+h2              { font-size: 1.2em; }
+
+.header{
+    display: grid;
+  grid-auto-flow: column;
+  gap: 4px;
+  align-items: center;
+  justify-items: center;
+}
+
+.game-board{
+    display: grid;
+    grid-template-columns: 60px 60px 60px 60px 60px 60px 60px 60px 60px;
+    gap: 10px;
+    justify-content: center;
+}
+
+.ghost-position{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.probabilities{
+  background-color: cadetblue; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+    font-size: 15px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+    border-radius: 4px;
+}
+
+.probabilities-2{
+  background-color: cadetblue; /* Green */
+  border: none;
+  color: red;
+  padding: 15px 32px;
+    font-size: 15px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+    border-radius: 4px;
+}
+
+.probabilities:hover{
+      background-color: navajowhite;
+  color: black;
+}
+
+.buttons{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.button {
+  border: none;
+  color: white;
+  padding: 13px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.time {
+  background-color: white;
+  color: black;
+  border: 2px solid dodgerblue;
+}
+
+.time:hover {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.scan {
+  background-color: white;
+  color: black;
+  border: 2px solid darkred;
+}
+
+.scan:hover {
+  background-color: darkred;
+  color: white;
+}
